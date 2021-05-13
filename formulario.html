@@ -21,7 +21,11 @@
       font-style: italic;
       }
 
+footer{
+  text-align: center;
+}
       text {
+      
       color     : white;
       font-size : 20px;
       text-align: left;
@@ -43,31 +47,56 @@
       text-align: left;
       }
 
-      button {
+      .button1 {
+        border-radius: 12px;
       background-color: yellow;
       text-align      : center;
       font-size       : 15px;
-      padding         : 10px;
+      padding         : 20px;
       width           : 300px;
+      transition: 0.5s;
       cursor          : pointer;
-      margin          : 2px;
+      margin          : 5px;
       }
 
-      button:hover {
+     body {
+background-color: darkgrey;
+}
+
+  
+      .button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+      .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+      .button1:hover {
       background-color: teal;
       }
-
-      select{
-      border-color: yellow;
-      width       : 400px;
-      padding     : 10px;
-      }
+      .button1:hover span {
+  padding-right: 25px;
+}
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+      
       .myInputByClass {
+        border-radius: 10px;
       border-color: yellow;
       width       : 400px;
       padding     : 10px;
       }
       textarea{
+      border-radius: 5px;
       border-color: yellow;
       width       : 400px;
       padding     : 10px;
@@ -75,24 +104,39 @@
       </style>
     </head>
 
-    <body >
+    <header>
+      ITGest Academy
+      <select  class = "myInputByClass" onchange="location.href=this.value">
+        <option value="SOBRE A ITGEST ACADEMY">SOBRE A ITGEST ACADEMY </option>
+        <option value="https://academy.itgest.pt/#fazdiferenca">FAZ A DIFERENÇA</option>
+        <option value="https://academy.itgest.pt/#sobre">SOBRE</option>
+        <option value="https://academy.itgest.pt/#publicoalvo">PUBLICO ALVO</option>
+      </select>
+      <hr>
+    </header>
+    <body>
 
-
+      
       <br>
       <h1> Inscreve-te 
+        <i class="material-icons">mode_edit</i>
       </h1>
+      
+      <span class="material-icons-outlined">
+        </span>
       <br>
       <br>
       <div>
         <label>
       Academia em que está a se candidatar*
         </label><br>
-      <select id    = "academia" aria-required = "true" placeholder = "---">
+      <select class = "myInputByClass" aria-required = "true" placeholder = "---">
       <option value = "sap">SAP HCM Success Factors (17 de Maio de 2021)</option>
       <option value = "dev" disabled>Software Development</option>
       <option value = "bia">Business Intelligence & Analytics 31 de Maio de 2021</option>
       </select>
       </div>
+      
       <br>
       <div>
         <label>
@@ -113,6 +157,7 @@
       <label> Data de nascimento*</label>
       <br>
       <input class = "myInputByClass" type = "date" aria-required = "true"placeholder = "Data de nascimento"/>
+      <hr>
       <br>
       <br>
       <div    class = "exemplo-flex">
@@ -136,8 +181,6 @@
       <input type = "checkbox">
       <label> Outro</label>
       </label1>
-      <br>
-      <br>
       <label2 class = "myLabelByClass"
               id    = "myILabelById" > Área de Formação *
       <br>
@@ -181,8 +224,7 @@
       <label> Outro</label>
       </label2>
       </div>
-      <br>
-      <br>
+      <hr>
       <div>
       <label>
       Ano de conclusão*
@@ -239,19 +281,23 @@
       <input type = "file">
       </label4>
       </div>
-      <br>
-      <br>
-      <label>Deixa aqui as tuas dúvidas e esclarecimentos</label>
+      <hr>
+
+            <label>Deixa aqui as tuas dúvidas e esclarecimentos</label>
       <br>
       <textarea placeholder = "Deixa-nos aqui as tuas duvidas/ pedidos de esclarecimento">
       </textarea>
       <br>
       <br>
 
-      <label>Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na Política de Privacidade </label>
+      <label>Dou o meu consentimento á ITGest para tratar dos meus dados pessoais tal como descrito na </label>
+      <a href="https://academy.itgest.pt/politica-de-privacidade">Politica de Privacidade</a>
       <br>
 
-      <button onclick = ""> ENVIAR INSCRIÇÃO
+      <button class="button1" onclick = ""> <span> ENVIAR INSCRIÇÃO </span>
       </button>
+      <hr>
     </body>
+    <footer> Copyright © 2021 ITGest Academy | Powered by ITGest |  <a href="https://academy.itgest.pt/politica-de-privacidade">Politica de Privacidade</a>
+    </footer>
     </html>
