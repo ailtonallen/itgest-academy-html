@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: fixed;
+            top: 50%;
+            right: 50%;
+            animation-name:example-3;
+            animation-duration:1s;
+            animation-delay: 1s;
+            animation-iteration-count: 10;
+            animation-direction: alternate-reverse;
+         }
+         @keyframes example {
+             from {background-color: red;}
+             to {background-color: seagreen;}         
+         }
+         @keyframes example-2{
+         0%     {background-color: sienna;}
+         25%    {background-color: slateblue;}
+         50%    {background-color: springgreen;}
+         100%   {background-color: tomato;}
+         }
+
+         @keyframes example-3 {
+         0%     {background-color: sienna; left: 0px; top: 0px;}
+         25%    {background-color: slateblue;left: 200px; top: 0px;}
+         50%    {background-color: springgreen;left: 200px; top: 200px;}
+         75%    {background-color: silver;left: 0px; top: 0px;}
+         100%   {background-color: tomato;left: 0px; top: 200px; transform: rotate(360deg) scale(1);}
+                
+         }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

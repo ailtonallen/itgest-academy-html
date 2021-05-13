@@ -2,7 +2,50 @@
 <html>
     <head>
         <title>Tags Html</title>
-            <meta charset="utf-8">
+            <meta charset = "utf-8">
+            <style>
+          table, td, th{
+              border: 1px solid black;
+
+          }
+
+table{
+    border-collapse: collapse;
+    width          : 100%;
+}                
+      td, th{
+          padding: 10px;
+      }        
+
+      .striped-table th, td{
+text-align: left;
+          padding: 8px;
+      }
+
+      .striped-table tr:nth-child(even){
+          background-color: blanchedalmond;
+      }
+      .striped-table th {
+          background-color: chartreuse;
+          color           : chocolate;
+      }
+
+      /* .striped-table td{
+          text-align: right;
+      } */
+
+      /* #saving-column{
+          text-align: right;
+      } */
+
+      .striped-table td:last-child{
+          text-align: right;
+      }
+
+      div i{
+          color: cornflowerblue;
+      }
+            </style>
     </head>
     <body>
 <div>
@@ -29,8 +72,8 @@
     <h1>This is a Heading</h1>
         <p>This is a paragraph.</p>
 
-        <a href="https://www.w3schools.com"
-        target="_blank">
+        <a href   = "https://www.w3schools.com"
+           target = "_blank">
     Clique aqui
     </a>
     </div>
@@ -60,25 +103,25 @@
 
     <!-- Buttons -->
 <div>
-    <button type="button" 
-    onclick="console.log('Você está sendo monitorado');">
+    <button type    = "button"
+            onclick = "console.log('Você está sendo monitorado');">
     Get Link...</button>
 
-    <button type="button" onclick="console.log('xploit');"> Feed me...</button>
+    <button type = "button" onclick = "console.log('xploit');"> Feed me...</button>
     
 </div>
 <hr>
 <!-- Imagens -->
-<img class="logo " src="https://statics.teams.microsoft.com/hashedassets-launcher/v2/logo_teams.6b4e1ac088270d6bc887d2ae9bcbb04c.svg" 
-aria-hidden="true"
-width="350"
-height="350">
+<img class       = "logo " src = "https://statics.teams.microsoft.com/hashedassets-launcher/v2/logo_teams.6b4e1ac088270d6bc887d2ae9bcbb04c.svg"
+     aria-hidden = "true"
+     width       = "350"
+     height      = "350">
 <hr>
 <!-- Forms -->
 <br>
 <label>
-    Pesquisar:
-    <input type="search">
+    Pesquisar: 
+    <input type = "search">
     <button> Search
 
     </button>
@@ -86,115 +129,98 @@ height="350">
 </label>
 <br>
 <input
-type="checkbox"
-id="vehicle1"
-name="vehicle1">
-<label for="vehicle1"> I have a bike</label>
+       type = "checkbox"
+       id   = "vehicle1"
+       name = "vehicle1">
+<label for  = "vehicle1"> I have a bike</label>
 ​<br>
 <input
-type="checkbox"
-id="vehicle2"
-name="vehicle2">
-<label for="vehicle2"> I have a Car</label>
+       type = "checkbox"
+       id   = "vehicle2"
+       name = "vehicle2">
+<label for  = "vehicle2"> I have a Car</label>
 <br>​
 <input
-type="checkbox"
-id="vehicle3"
-name="vehicle3">
-<label for="vehicle3"> I have a Plane</label>
+       type = "checkbox"
+       id   = "vehicle3"
+       name = "vehicle3">
+<label for  = "vehicle3"> I have a Plane</label>
 
 <br>
-Genero:​ 
+Genero: ​
 <br>
 <br>
 
 <input
-type="radio"
-id="male"
-name="gender">
-<label for="male">
+       type = "radio"
+       id   = "male"
+       name = "gender">
+<label for  = "male">
       Male
 </label>
 <br>
 <br>
 <input
-type="radio"
-id="female"
-name="gender">
-<label for="female">
+       type = "radio"
+       id   = "female"
+       name = "gender">
+<label for  = "female">
       Female
 </label>
 <br>
 <br>
-Data de nascimento:
+Data de nascimento: 
 <label>
-<input type="date"
-min="1990-01-01"
-max="2021-01-01">
+<input type = "date"
+       min  = "1990-01-01"
+       max  = "2021-01-01">
 </label>
 
 <hr>
-<label> Selecione a marca:
-<select id="cars">
-    <option value="mahindra">Volvo</option>
-    <option value="toyota">Saab</option>
-    <option value="maserati">Opel</option>
-    <option value="audi">Audi</option>
+<label> Selecione a marca: 
+<select id    = "cars">
+<option value = "mahindra">Volvo</option>
+<option value = "toyota">Saab</option>
+<option value = "maserati">Opel</option>
+<option value = "audi">Audi</option>
 </select>
 </label>
 <br>
 <br>
 
 <label> Comentarios
-<textarea name="comentarios" id="comentarios" cols="100" rows="90"></textarea>
+<textarea name = "comentarios" id = "comentarios" cols = "100" rows = "90"></textarea>
 </label>
 
 <!-- Tables -->
 <hr>
 <h1>Formandos</h1>
-<table>
+<table class = "striped-table">
     <tr>
-        <th>
-            Id
-        </th>
-        <th>
-            Nome
-        </th>
-        <th>
-            País
-        </th>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>País</th>
     </tr>
     <tr>
-        <td>
-            1
+        <td>1
         </td>
-        <td>
-            Ailton
+        <td>Ailton
         </td>
-        <td>
-            Moçambique
+        <td>Moçambique
         </td>
     </tr>
     <tr>
-        <td>
-            2
+        <td> 2
         </td>
-        <td>
-            Alicia
+        <td> Alicia
         </td>
-        <td>
-            Angola
-        </td></tr>
-        <tr>
-        <td>
-            3
+        <td> Angola
         </td>
-        <td>
-            Eutico
-        </td>
-        <td>
-            Israel
-        </td>
+    </tr>
+        <tr id="saving-column">
+        <td> 3 </td>
+        <td> Eutico   </td>
+        <td> Israel  </td>
     </tr>
 
     
